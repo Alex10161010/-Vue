@@ -38,9 +38,7 @@ const app = Vue.createApp({
             <div>
 				<p>{{mensaje}}</p>
 			</div>
-            <div v-for="numero in numeros">
-				<ComponenteNumero :numero_="numero"/>
-			</div>
+            <ComponenteNumero v-for="numero in numeros" :numero_="numero"/>
             `,
 	data() {
 		return {
